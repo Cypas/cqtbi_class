@@ -5,28 +5,29 @@
  * @version: 
  * @Date: 2021-04-05 19:50:47
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-13 20:17:17
+ * @LastEditTime: 2021-04-14 09:41:58
  */
 global $openid,$zc,$startdate;
 $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改
 
 
     function del_object($arr,$week){////获取到的都是周课表，需要删除非当天的数据
+        
         switch($week){
             case 0:
-                $week='日';break;
+                $week='7';break;
             case 1:
-                $week='一';break;
+                $week='1';break;
             case 2:
-                $week='二';break;
+                $week='2';break;
             case 3:
-                $week='三';break;
+                $week='3';break;
             case 4:
-                $week='四';break;
+                $week='4';break;
             case 5:
-                $week='五';break;
+                $week='5';break;
             case 6:
-                $week='六';break;
+                $week='6';break;
             default:
                 echo '周次错误';break;
         }
