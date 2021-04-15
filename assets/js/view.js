@@ -147,6 +147,7 @@ function msg_contact() {//创建消息框 联系方式
 
 }
 //合并table
+
 $(function() {
    
    $("#class").rowspan(0);//传入的参数是对应的列数从0开始  第一列合并相同
@@ -159,6 +160,7 @@ $(function() {
    $("#class").rowspan(7);
    
    });
+   
 
 
 

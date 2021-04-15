@@ -79,14 +79,14 @@ include_once 'function.php';//引用
 
               <table width="100%" align="center" id="class"><!--第一行-->
               <tr height="20px">
-              <th bgcolor="LightSalmon" colspan="2" width="9%">$zc 周</th>
-              <th bgcolor="LightSalmon" width="13%">周一</th>
-              <th bgcolor="LightSalmon" width="13%">周二</th>
-              <th bgcolor="LightSalmon" width="13%">周三</th>
-              <th bgcolor="LightSalmon" width="13%">周四</th>
-              <th bgcolor="LightSalmon" width="13%">周五</th>
-              <th bgcolor="LightSalmon" width="13%">周六</th>
-              <th bgcolor="LightSalmon" width="13%">周日</th>
+              <th bgcolor="#d3eef4" colspan="1" width="9%">$zc 周</th>
+              <th bgcolor="#f0f3f4" width="13%">周一</th>
+              <th bgcolor="#f0f3f4" width="13%">周二</th>
+              <th bgcolor="#f0f3f4" width="13%">周三</th>
+              <th bgcolor="#f0f3f4" width="13%">周四</th>
+              <th bgcolor="#f0f3f4" width="13%">周五</th>
+              <th bgcolor="#f0f3f4" width="13%">周六</th>
+              <th bgcolor="#f0f3f4" width="13%">周日</th>
               </tr>
 
               <tr height="20px">
@@ -94,19 +94,19 @@ include_once 'function.php';//引用
               $month=get_date_array($zc,1)['month'];
 
               echo <<<eot
-              <th bgcolor="LightSalmon" colspan="2" width="9%">$month 月</th>
+              <th bgcolor="#d3eef4" colspan="1" width="9%">$month 月</th>
               eot;
 
-              for($i=1;$i<=7;++$i){
+              for($i=0;$i<7;++$i){
                      $new_month=get_date_array($zc,$i)['month'];
                      $day=get_date_array($zc,$i)['day'];
                      if($month==$new_month){
                             echo <<<eot
-                            <th bgcolor="LightSalmon" width="13%">$day</th>
+                            <th bgcolor="#f0f3f4" width="13%">$day</th>
                             eot;
                      }else{
                             echo <<<eot
-                            <th bgcolor="LightSalmon" width="13%">$new_month.$day</th>
+                            <th bgcolor="#f0f3f4" width="13%">$new_month.$day</th>
                             eot;
                      }
 
@@ -115,8 +115,8 @@ include_once 'function.php';//引用
               echo "</tr>";
               echo <<<eot
               <tr height="50px">
-              <th rowspan="5" bgcolor="LightGoldenRodYellow">上午</th>
-              <th rowspan="1" bgcolor="Khaki">1</th>
+              
+              <th rowspan="1" bgcolor="#d3eef4">1</th>
               eot;
               echo fill($array,'1');
               echo "</tr>";
@@ -124,7 +124,7 @@ include_once 'function.php';//引用
               for($i=2;$i<=5;++$i){
                      echo <<<eot
                      <tr height="50px">
-                     <th rowspan="1" bgcolor="Khaki">$i</th>
+                     <th rowspan="1" bgcolor="#d3eef4">$i</th>
                      eot;
                      echo fill($array,$i);
                      echo "</tr>";
@@ -132,8 +132,8 @@ include_once 'function.php';//引用
 
               echo <<<eot
               <tr height="50px">
-              <th rowspan="5" bgcolor="LightGoldenRodYellow">下午</th>
-              <th rowspan="1" bgcolor="Khaki">6</th>
+              
+              <th rowspan="1" bgcolor="#d3eef4">6</th>
               eot;
               echo fill($array,'6');
               echo "</tr>";
@@ -141,7 +141,7 @@ include_once 'function.php';//引用
               for($i=7;$i<=10;++$i){
                      echo <<<eot
                      <tr height="50px">
-                     <th rowspan="1" bgcolor="Khaki">$i</th>
+                     <th rowspan="1" bgcolor="#d3eef4">$i</th>
                      eot;
                      echo fill($array,$i);
                      echo "</tr>";
@@ -149,13 +149,13 @@ include_once 'function.php';//引用
 
               echo <<<eot
               <tr height="50px">
-              <th rowspan="2" bgcolor="LightGoldenRodYellow">晚上</th>
-              <th rowspan="1" bgcolor="Khaki">11</th>
+              
+              <th rowspan="1" bgcolor="#d3eef4">11</th>
               eot;
               echo fill($array,'11');
               echo <<<eot
               <tr height="50px">
-              <th rowspan="1" bgcolor="Khaki">12</th>
+              <th rowspan="1" bgcolor="#d3eef4">12</th>
               eot;
               echo fill($array,'12');
               
@@ -167,14 +167,13 @@ include_once 'function.php';//引用
               <footer class="footer-28">
               <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
               <div class="container">
-              <p class="copy-footer-28 text-center">©2021 Mashiro_05|<a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a>|<a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
+              <p class="copy-footer-28 text-center">©2021 Mashiro_05 | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
               </div>
               </div>
-              </div>
+              
               </footer>
               </section>
-
-              </div>
+              
 
               <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <script src="assets/js/view.js"></script>
@@ -244,7 +243,7 @@ include_once 'function.php';//引用
                                    //填充空白行
                                    
                                    $msg=<<<eot
-                                   <td rowspan="1" bgcolor="Lavender"></td>
+                                   <td rowspan="1" bgcolor="#f0f3f4"></td>
                                    eot;
 
                             }
@@ -254,8 +253,10 @@ include_once 'function.php';//引用
               }
        }
        function rand_color(){
-              $bgcolor=['GreenYellow','Plum','Plum','SpringGreen','LightBlue','LightPink','Coral','Gold','LightSteelBlue','Thistle','SandyBrown','LightGreen','Feldspar'];
-              return $bgcolor[rand(0, 12)];
+              //$bgcolor=['GreenYellow','Plum','Plum','SpringGreen','LightBlue','LightPink','Coral','Gold','LightSteelBlue','Thistle','SandyBrown','LightGreen','Feldspar'];
+              //$bgcolor=['#CCFFFF','#FFCCCC','#FFFF99','#CCCCFF','#FF9966','##87CEFA','#CCFF99','#CCFFCC','#FFCC99','#99CCCC','#99CC99','#FFFFCC','#FF99CC','#66CCCC','#FF9900'];
+              $bgcolor=['#FFFFCC','#CCFFFF','#FFCCCC','#CCCCFF'];
+              return $bgcolor[rand(0, count($bgcolor)-1)];
        }
 
        function get_url_parameter($name){//参数名称   //取url内参数值
@@ -275,5 +276,4 @@ include_once 'function.php';//引用
               }
               }
 ?>
-
 

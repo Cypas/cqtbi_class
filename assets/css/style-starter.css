@@ -640,7 +640,11 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
+  
 }
+
+
 
 @media (min-width: 576px) {
   .container {
@@ -4609,6 +4613,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-family:"Source Sans Pro","Hiragino Sans GB","Microsoft Yahei",SimSun,Helvetica,Arial,Sans-serif,monospace;
 }
 
 .navbar-brand:hover,
@@ -14149,7 +14154,7 @@ ul {
 :root {
   --theme-color: #293462;
   --theme-hover: #f7be16;
-  --theme-dark: #0F1324;
+  --theme-dark: ;
   --theme-lite: #F8F9FC;
   --theme-title: #171C36;
   --theme-para: #777;
@@ -14594,9 +14599,10 @@ h3.media-heading a:hover {
 
 button#showLeftPush {
   outline: none;
-  background: none;
+  background: #38b6e0;
   border: none;
-  font-size: 28px;
+  font-size: 20px;
+  border-radius:6px;
 }
 
 .cbp-spmenu h3 {
@@ -14633,7 +14639,7 @@ button#showLeftPush {
   height: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 3px 9px rgba(35, 55, 77, 0.24);
+  box-shadow: 0 3px 9px #99ccff;
 }
 
 .cbp-spmenu-vertical a {
@@ -14781,10 +14787,11 @@ button#showLeftPush {
 /*-- //copyright --*/
 /*--/header--*/
 .tophny-header {
-  background: var(--theme-hover);
+  /*background: var(--theme-hover);*/
+  background:#3daacd;
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 70px;
+  height: 50px;
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -14799,7 +14806,7 @@ button#showLeftPush {
 }
 
 .logo .navbar-brand {
-  margin: 0;
+  margin: 0px 0px 12px 0px;
   padding: 0;
   font-size: 26px;
   font-weight: 700;
@@ -14848,7 +14855,7 @@ button#showLeftPush {
 a.hnysearch-icon span.fa {
   width: 34px;
   font-size: 18px;
-  background: #d39e00;
+  background: #38b6e0;
   text-align: center;
   height: 34px;
   line-height: 34px;
@@ -14863,7 +14870,7 @@ a.hnysearch-icon span.fa {
 .search-right .popup form input[type="search"] {
   padding: 15px 15px;
   border: none;
-  background: #fff;
+  background: #3daacd;
   color: #888;
   font-size: 16px;
   border-radius: 6px;
@@ -15013,7 +15020,7 @@ a.hnysearch-icon span.fa {
   .logo .navbar-brand {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
