@@ -1,0 +1,20 @@
+html, body {
+    height: 80%;
+}
+
+.footer {
+    margin-top: -30px;
+    height: 30px;
+    background-color: #eee;
+    z-index: 9999;
+    clear: both;
+}
+
+.wrap {
+    min-height: 80%;
+}
+
+.main {
+    padding-bottom: 50px;
+}
+

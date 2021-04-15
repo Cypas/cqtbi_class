@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-05 16:06:57
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-13 09:28:23
+ * @LastEditTime: 2021-04-15 14:46:42
  */
 include_once 'get_return.php';//引用
 include_once 'function.php';//引用
@@ -16,7 +16,7 @@ include_once 'function.php';//引用
         $ticket = curl1($openid);
         $cookie = curl2($ticket);
         $data   = curl4($zc,$cookie,$ticket);
-        $data   = getTabledate($data);  //table内容变为数组
+        $data   = getTabledate($openid,$data);  //table内容变为数组
         
         $data['class_num'] = count($data['classtime'],0);   //数组额外输出点数据让客户端省事  class_num是今天的课程节数
         $data['week_num']  = (int)$zc;  //周次
@@ -38,7 +38,7 @@ include_once 'function.php';//引用
         $ticket = curl1($openid);
         $cookie = curl2($ticket);
         $data   = curl4($week_num,$cookie,$ticket);
-        $data   = getTabledate($data);
+        $data   = getTabledate($openid,$data);
         $data   = del_object($data,$week);    //一周内的课表删除掉非今日的数据
         
         
@@ -59,7 +59,7 @@ include_once 'function.php';//引用
         $ticket = curl1($openid);
         $cookie = curl2($ticket);
         $data   = curl4($week_num,$cookie,$ticket);
-        $data   = getTabledate($data);
+        $data   = getTabledate($openid,$data);
         $data   = del_object($data,$week);    //一周内的课表删除掉非今日的数据
         
         
@@ -79,7 +79,7 @@ include_once 'function.php';//引用
         $ticket = curl1($openid);
         $cookie = curl2($ticket);
         $data   = curl4($zc,$cookie,$ticket);
-        $data   = getTabledate($data);  //table内容变为数组
+        $data   = getTabledate($openid,$data); //table内容变为数组
         
         $data['class_num'] = count($data['classtime'],0);   //数组额外输出点数据让客户端省事  class_num是今天的课程节数
         $data['week_num']  = (int)$zc;  //周次

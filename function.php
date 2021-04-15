@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-05 19:50:47
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-14 09:41:58
+ * @LastEditTime: 2021-04-15 16:19:09
  */
 global $openid,$zc,$startdate;
 $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改
@@ -33,7 +33,7 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
         }
 
         /*
-        foreach ($arr['classtime'] as $key => $value) {
+        foreach ($arr['classtime'] as $key => $value) {//
             if(strpos($value["week"],$week)=== false){
              
                 unset($arr['classtime'][$key]);
@@ -63,9 +63,20 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
         if($week_num<10)$week_num="0".$week_num;
         return $week_num;
     }
+
+    function get_date_array($zc,$xq){//取当前周次 $date=null 表示参数可缺省
+        global $startdate;
+        $starttime=date_format($startdate,"Y-m-d");
+        $time=strtotime($starttime)+604800*$zc+86400*($xq-1);
+        $month=date('n',$time);
+        $day=date('j',$time);
+        //$array=['month'=>$month,'day'=>$day];
+        //return $array;
+        return ['month'=>$month,'day'=>$day];
+    }
   
   
-    function getTabledate($info){//table格式化为二维数组
+    function getTabledate($openid,$info){//table格式化为二维数组
         $info = str_replace(array("--","<br/>","\t","\r\n","\r","\n"),"",$info);
         //preg_match_all("~<table[^>]+[^>]*>(.*?)<\/table>~", $info, $content);//原版代码,不太适用于本校课表
         preg_match_all("~</thead>([\s\S]*)</table>~", $info, $content);
@@ -123,7 +134,7 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
             
             }
         }    
-
+        $array3['openid']=$openid;
         $array3['start_time']=array('8:00','8:50','9:40','10:30','11:20','14:00','14:50','15:40','16:30','17:20','19:00','19:50');
         $array3['end_time']=array('8:40','9:30','10:20','11:10','12:00','14:40','15:30','16:20','17:10','18:00','19:40','20:30');
         $array3['classtime']=$res;////封装三维数组
