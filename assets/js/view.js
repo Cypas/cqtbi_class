@@ -124,6 +124,9 @@ function msg_about_class() {//创建消息框 关于课表
       },
   });
 
+  showLeftPush = document.getElementById('showLeftPush');
+  $(showLeftPush).trigger("click");
+
 }
 
 function msg_contact() {//创建消息框 联系方式
@@ -138,6 +141,9 @@ function msg_contact() {//创建消息框 联系方式
           minWidth: 400
       },
   });
+
+  showLeftPush = document.getElementById('showLeftPush');
+  $(showLeftPush).trigger("click");
 
 }
 //合并table
