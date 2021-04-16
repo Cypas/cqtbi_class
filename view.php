@@ -18,7 +18,7 @@ include_once 'function.php';//引用
               <link rel="stylesheet" href="assets/css/style-starter.css">
               <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
               <link rel="stylesheet" href="assets/css/message.min.css">
-              <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
               <script src="assets/js/message.min.js"></script>
 
               </head>
@@ -97,7 +97,7 @@ include_once 'function.php';//引用
               <th bgcolor="#d3eef4" colspan="1" width="9%">$month 月</th>
               eot;
 
-              for($i=0;$i<7;++$i){
+              for($i=1;$i<=7;++$i){
                      $new_month=get_date_array($zc,$i)['month'];
                      $day=get_date_array($zc,$i)['day'];
                      if($month==$new_month){
@@ -113,15 +113,9 @@ include_once 'function.php';//引用
               }
               
               echo "</tr>";
-              echo <<<eot
-              <tr height="50px">
+
               
-              <th rowspan="1" bgcolor="#d3eef4">1</th>
-              eot;
-              echo fill($array,'1');
-              echo "</tr>";
-              
-              for($i=2;$i<=5;++$i){
+              for($i=1;$i<=5;++$i){
                      echo <<<eot
                      <tr height="50px">
                      <th rowspan="1" bgcolor="#d3eef4">$i</th>
@@ -130,15 +124,20 @@ include_once 'function.php';//引用
                      echo "</tr>";
               }
 
-              echo <<<eot
-              <tr height="50px">
-              
-              <th rowspan="1" bgcolor="#d3eef4">6</th>
-              eot;
-              echo fill($array,'6');
-              echo "</tr>";
+              // echo <<<eot
+              // <tr height="5px">
+              // <th colspan="8" bgcolor="#d3eef4"></th>
+              // eot;
+              // /*
+              // for($i=1;$i<=7;++$i){
+              //        echo <<<eot
+              //        <td rowspan="1" bgcolor="#d3eef4"></td>
+              //        eot;
+              // }
+              // */
+              // echo "</tr>";
 
-              for($i=7;$i<=10;++$i){
+              for($i=6;$i<=10;++$i){
                      echo <<<eot
                      <tr height="50px">
                      <th rowspan="1" bgcolor="#d3eef4">$i</th>
@@ -147,20 +146,32 @@ include_once 'function.php';//引用
                      echo "</tr>";
               }
 
-              echo <<<eot
-              <tr height="50px">
-              
-              <th rowspan="1" bgcolor="#d3eef4">11</th>
-              eot;
-              echo fill($array,'11');
-              echo <<<eot
-              <tr height="50px">
-              <th rowspan="1" bgcolor="#d3eef4">12</th>
-              eot;
-              echo fill($array,'12');
+              // echo <<<eot
+              // <tr height="5px">
+              // <th colspan="8" bgcolor="#d3eef4"></th>
+              // eot;
+              // /*
+              // for($i=1;$i<=7;++$i){
+              //        echo <<<eot
+              //        <td rowspan="1" bgcolor="#d3eef4"></td>
+              //        eot;
+              // }
+              // */
+              // echo '</tr>';
+
+
+              for($i=11;$i<=12;++$i){
+                     echo <<<eot
+                     <tr height="50px">
+                     <th rowspan="1" bgcolor="#d3eef4">$i</th>
+                     eot;
+                     echo fill($array,$i);
+                     echo "</tr>";
+              }
+
+
               
               echo <<<eod
-              </tr>
               </table>
               </section>
               <section class="w3l-footer">
@@ -238,13 +249,19 @@ include_once 'function.php';//引用
                                    }
                             }
                             
-                     $num=$i+($c-1)*7;
+                     
                             if($msg===""){
                                    //填充空白行
+
                                    
                                    $msg=<<<eot
                                    <td rowspan="1" bgcolor="#f0f3f4"></td>
                                    eot;
+                                   
+
+                            //       $msg=<<<eot
+                            //       <td rowspan="1" bgcolor=""></td>
+                            //       eot;
 
                             }
                             echo $msg;

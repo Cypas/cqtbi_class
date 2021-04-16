@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-05 19:50:47
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-15 16:19:09
+ * @LastEditTime: 2021-04-16 00:21:02
  */
 global $openid,$zc,$startdate;
 $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改
@@ -67,7 +67,7 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
     function get_date_array($zc,$xq){//取当前周次 $date=null 表示参数可缺省
         global $startdate;
         $starttime=date_format($startdate,"Y-m-d");
-        $time=strtotime($starttime)+604800*$zc+86400*($xq-1);
+        $time=strtotime($starttime)+604800*($zc-1)+86400*($xq-1);
         $month=date('n',$time);
         $day=date('j',$time);
         //$array=['month'=>$month,'day'=>$day];
