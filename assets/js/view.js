@@ -95,7 +95,7 @@ jQuery.fn.rowspan = function(colIdx) { //封装的一个JQuery小插件
 
             
             
-            if (that!=null && $(this).html() == $(that).html()) {//&& $(that).attr("bgcolor") !=="Lavender"  加上这个不会合并填充格，但会很丑
+            if (that!=null && $(that).attr("bgcolor") !=="#d3eef4" && $(this).html() == $(that).html()) {//&& $(that).attr("bgcolor") !=="Lavender"  加上这个不会合并填充格，但会很丑
                rowspan = $(that).attr("rowSpan");
                if (rowspan == undefined) {
                   $(that).attr("rowSpan",1);
@@ -135,7 +135,7 @@ function msg_contact() {//创建消息框 联系方式
       content: $('#pane2').html(),
       offset: 'vt-center-center',
       title: '联系方式',
-      content: '<p>个人简介:喜欢动漫的非二次元死宅，大二软件技术在读学生，steam骨灰级玩家(fps游戏除外)，擅长各种编程语言<s>的hello world！</s></br>希望能认识更多优秀的人</br></br>steamid:<font color="#add8e6">420985217</font></br>QQ:<font color="#add8e6">2773793160</font></br>邮箱:<font color="#add8e6">ayano05@outlook.com</font></p>',//内容
+      content: '<p>个人简介:喜欢动漫的非二次元死宅，大二软件技术在读学生，steam骨灰级玩家(fps游戏除外)，擅长各种编程语言<s>的hello world！</s></br>希望能认识更多优秀的人</br></br>QQ:<font color="#add8e6">2773793160</font></br>邮箱:<font color="#add8e6">ayano05@outlook.com</font></br>steamid:<font color="#add8e6">420985217</font></p>',//内容
       footer: true,
       style: {
           minWidth: 400

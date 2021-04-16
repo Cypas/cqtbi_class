@@ -17,6 +17,7 @@ include_once 'function.php';//引用
 
               <link rel="stylesheet" href="assets/css/style-starter.css">
               <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
+              <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <link rel="stylesheet" href="assets/css/message.min.css">
 
               <script src="assets/js/message.min.js"></script>
@@ -124,18 +125,18 @@ include_once 'function.php';//引用
                      echo "</tr>";
               }
 
-              // echo <<<eot
-              // <tr height="5px">
-              // <th colspan="8" bgcolor="#d3eef4"></th>
-              // eot;
-              // /*
-              // for($i=1;$i<=7;++$i){
-              //        echo <<<eot
-              //        <td rowspan="1" bgcolor="#d3eef4"></td>
-              //        eot;
-              // }
-              // */
-              // echo "</tr>";
+              echo <<<eot
+              <tr height="5px">
+              <th colspan="1" bgcolor="#d3eef4"></th>
+              eot;
+              
+              for($i=1;$i<=7;++$i){
+                     echo <<<eot
+                     <td rowspan="1" bgcolor="#d3eef4"></td>
+                     eot;
+              }
+              
+              echo "</tr>";
 
               for($i=6;$i<=10;++$i){
                      echo <<<eot
@@ -146,18 +147,18 @@ include_once 'function.php';//引用
                      echo "</tr>";
               }
 
-              // echo <<<eot
-              // <tr height="5px">
-              // <th colspan="8" bgcolor="#d3eef4"></th>
-              // eot;
-              // /*
-              // for($i=1;$i<=7;++$i){
-              //        echo <<<eot
-              //        <td rowspan="1" bgcolor="#d3eef4"></td>
-              //        eot;
-              // }
-              // */
-              // echo '</tr>';
+              echo <<<eot
+              <tr height="5px">
+              <th colspan="1" bgcolor="#d3eef4"></th>
+              eot;
+              
+              for($i=1;$i<=7;++$i){
+                     echo <<<eot
+                     <td rowspan="1" bgcolor="#d3eef4"></td>
+                     eot;
+              }
+              
+              echo '</tr>';
 
 
               for($i=11;$i<=12;++$i){
