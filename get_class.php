@@ -5,10 +5,11 @@
  * @version: 
  * @Date: 2021-04-05 16:06:57
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-15 14:46:42
+ * @LastEditTime: 2021-04-20 19:57:25
  */
 include_once 'get_return.php';//引用
 include_once 'function.php';//引用
+include_once 'class.php';//引用
 
     function get_class_week($openid,$zc) {//获取周课表
         
@@ -23,6 +24,7 @@ include_once 'function.php';//引用
         $data['date']      = getdate();       //当天的数据 年月日时分秒周 等等
         
         $data = json_encode($data);   //数组内容变为json格式
+        $data=Helper_Tool::unicodeDecode($data);
         echo $data;
         
     } 
@@ -47,6 +49,7 @@ include_once 'function.php';//引用
         $data['date']      = getdate(strtotime(date("Y-m-d",strtotime($day." day"))));       //当天的数据 年月日时分秒周 等等
         
         $data   = json_encode($data);         //数组内容变为json格式
+        $data=Helper_Tool::unicodeDecode($data);
         echo $data;
         
      }
@@ -69,6 +72,7 @@ include_once 'function.php';//引用
         
         
         $data   = json_encode($data);         //数组内容变为json格式
+        $data=Helper_Tool::unicodeDecode($data);
         echo $data;
 
 

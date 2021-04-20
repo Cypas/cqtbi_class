@@ -115,7 +115,6 @@ include_once 'function.php';//引用
               
               echo "</tr>";
 
-              
               for($i=1;$i<=5;++$i){
                      echo <<<eot
                      <tr height="50px">
@@ -288,7 +287,7 @@ include_once 'function.php';//引用
                      case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '计算机1班';
                      case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '计算机6班';
-                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
+                     case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '移动应用1班';
                      //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      default:return'未记录班级';
               }
