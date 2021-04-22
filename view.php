@@ -16,9 +16,9 @@ include_once 'function.php';//引用
               <title>工商课表</title>
 
               <link rel="stylesheet" href="assets/css/style-starter.css">
-              <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
               <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <link rel="stylesheet" href="assets/css/message.min.css">
+              <link rel="stylesheet" href="assets/css/view.css">
 
               <script src="assets/js/message.min.js"></script>
 
@@ -29,7 +29,7 @@ include_once 'function.php';//引用
                      <h3>当前班级:$banji</h3>
 
               <ul>
-              <li><a class="active" href="index.php?openid=$openid">本周课表</a></li>
+              <li><a class="active" href="?openid=$openid">本周课表</a></li>
               <li><a href="https://blog.ayano.top">我的博客</a></li>
               <li><a href="https://blog.ayano.top/archives/483/">接口文档</a></li>
               <li><a href="javascript:void(0)" onclick="msg_about_class()">关于课表</a></li>
@@ -46,7 +46,7 @@ include_once 'function.php';//引用
 
               </div>
               <div class="logo text-center">
-              <h1><a class="navbar-brand" href="index.php?openid=$openid">
+              <h1><a class="navbar-brand" href="?openid=$openid">
               工商课表
               </a></h1>
 
@@ -75,19 +75,26 @@ include_once 'function.php';//引用
               </div>
 
               </div>
-              <section class="w3l-testimonials"><!--主体内容-->
-
+              <section class="w3l-testimonials" ><!--主体内容-->
+              <div style="background:#f0f3f4;">
 
               <table width="100%" align="center" id="class"><!--第一行-->
               <tr height="20px">
-              <th bgcolor="#d3eef4" colspan="1" width="9%">$zc 周</th>
+              <th bgcolor="#d3eef4" colspan="1" width="12%">$zc 周</th>
               <th bgcolor="#f0f3f4" width="13%">周一</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
               <th bgcolor="#f0f3f4" width="13%">周二</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
               <th bgcolor="#f0f3f4" width="13%">周三</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
               <th bgcolor="#f0f3f4" width="13%">周四</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
               <th bgcolor="#f0f3f4" width="13%">周五</th>
-              <th bgcolor="#f0f3f4" width="13%">周六</th>
-              <th bgcolor="#f0f3f4" width="13%">周日</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
+              <th bgcolor="#f0f3f4" width="9%">周六</th>
+              <th bgcolor="#f0f3f4" width="0.3%"></th>
+              <th bgcolor="#f0f3f4" width="9%">周日</th>
+              <th bgcolor="#f0f3f4" width="0"></th>
               </tr>
 
               <tr height="20px">
@@ -103,11 +110,13 @@ include_once 'function.php';//引用
                      $day=get_date_array($zc,$i)['day'];
                      if($month==$new_month){
                             echo <<<eot
-                            <th bgcolor="#f0f3f4" width="13%">$day</th>
+                            <th bgcolor="#f0f3f4" width="12.3%">$day</th>
+                            <th bgcolor="#f0f3f4" width="0.3%"></th>
                             eot;
                      }else{
                             echo <<<eot
-                            <th bgcolor="#f0f3f4" width="13%">$new_month.$day</th>
+                            <th bgcolor="#f0f3f4" width="12.3%">$new_month.$day</th>
+                            <th bgcolor="#f0f3f4" width="0.3%"></th>
                             eot;
                      }
 
@@ -129,9 +138,9 @@ include_once 'function.php';//引用
               <th colspan="1" bgcolor="#d3eef4"></th>
               eot;
               
-              for($i=1;$i<=7;++$i){
+              for($i=1;$i<=14;++$i){
                      echo <<<eot
-                     <td rowspan="1" bgcolor="#d3eef4"></td>
+                     <td rowspan="1" bgcolor="#f0f3f4"></td>
                      eot;
               }
               
@@ -151,9 +160,9 @@ include_once 'function.php';//引用
               <th colspan="1" bgcolor="#d3eef4"></th>
               eot;
               
-              for($i=1;$i<=7;++$i){
+              for($i=1;$i<=14;++$i){
                      echo <<<eot
-                     <td rowspan="1" bgcolor="#d3eef4"></td>
+                     <td rowspan="1" bgcolor="#f0f3f4"></td>
                      eot;
               }
               
@@ -173,10 +182,11 @@ include_once 'function.php';//引用
               
               echo <<<eod
               </table>
+              </div>
               </section>
               <section class="w3l-footer">
               <footer class="footer-28">
-              <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+              <div class="midd-footer-28 align-center py-lg-4 py-3 mt-3">
               <div class="container">
               <p class="copy-footer-28 text-center">©2021 Mashiro_05 | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
               </div>
@@ -238,11 +248,12 @@ include_once 'function.php';//引用
                             ){
                                           //填充该节课 
                                                  $msg=<<<eot
-                                                 <td rowspan="1" align="center" bgcolor="$color">
+                                                 <td rowspan="1" align="center" bgcolor="$color" class="td">
                                                  $course</br>
                                                  @$place</br>
                                                  $start_time-$end_time</br>
                                                  </td>
+                                                 <td rowspan="1" bgcolor="#f0f3f4"></td>
                                                  eot;
                                           
                                           break;
@@ -253,15 +264,10 @@ include_once 'function.php';//引用
                             if($msg===""){
                                    //填充空白行
 
-                                   
                                    $msg=<<<eot
                                    <td rowspan="1" bgcolor="#f0f3f4"></td>
+                                   <td rowspan="1" bgcolor="#f0f3f4"></td>
                                    eot;
-                                   
-
-                            //       $msg=<<<eot
-                            //       <td rowspan="1" bgcolor=""></td>
-                            //       eot;
 
                             }
                             echo $msg;
@@ -270,9 +276,9 @@ include_once 'function.php';//引用
               }
        }
        function rand_color(){
-              //$bgcolor=['GreenYellow','Plum','Plum','SpringGreen','LightBlue','LightPink','Coral','Gold','LightSteelBlue','Thistle','SandyBrown','LightGreen','Feldspar'];
-              //$bgcolor=['#CCFFFF','#FFCCCC','#FFFF99','#CCCCFF','#FF9966','##87CEFA','#CCFF99','#CCFFCC','#FFCC99','#99CCCC','#99CC99','#FFFFCC','#FF99CC','#66CCCC','#FF9900'];
               $bgcolor=['#FFFFCC','#CCFFFF','#FFCCCC','#CCCCFF'];
+              
+              //$bgcolor=['#d1e8fa','#def8d2','#c9edfa','#ffffdd','#f7f790'];
               return $bgcolor[rand(0, count($bgcolor)-1)];
        }
 
@@ -288,6 +294,12 @@ include_once 'function.php';//引用
                      case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '计算机1班';
                      case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '计算机6班';
                      case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '移动应用1班';
+                     case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '软件4班';
+                     case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '工业机器人';
+                     case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '大数据4班';
+                     case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '软件3班';
+                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
+                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      default:return'未记录班级';
               }

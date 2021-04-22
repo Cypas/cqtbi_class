@@ -1,20 +1,13 @@
-html, body {
-    height: 80%;
+
+
+.td{border-radius:10px};
+
+.qq{
+background-color:#f7f790;
 }
 
-.footer {
-    margin-top: -30px;
-    height: 30px;
-    background-color: #eee;
-    z-index: 9999;
-    clear: both;
-}
+/*
+$bgcolor=['#eff8ff','#f0fbeb','#f0fbff','#ffffdd','#fff5fd','#fffff7'];
 
-.wrap {
-    min-height: 80%;
-}
-
-.main {
-    padding-bottom: 50px;
-}
-
+$bgcolor=['#d1e8fa','#def8d2','#c9edfa','#ffffdd','#fafab5','#f7f790'];
+*/

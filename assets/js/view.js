@@ -135,7 +135,7 @@ function msg_contact() {//创建消息框 联系方式
       content: $('#pane2').html(),
       offset: 'vt-center-center',
       title: '联系方式',
-      content: '<p>个人简介:喜欢动漫的非二次元死宅，大二软件技术在读学生，steam骨灰级玩家(fps游戏除外)，擅长各种编程语言<s>的hello world！</s></br>希望能认识更多优秀的人</br>其他班需要qq机器人课表或是网页版课表的也可以联系我，扫一个二维码就可以了</br>QQ:<font color="#add8e6">2773793160</font></br>邮箱:<font color="#add8e6">ayano05@outlook.com</font></br>steamid:<font color="#add8e6">420985217</font></p>',//内容
+      content: '<p>个人简介:喜欢动漫的非二次元死宅，大二软件技术在读学生，steam骨灰级玩家(fps游戏除外)，擅长各种编程语言<s>的hello world！</s></br>希望能认识更多优秀的人</br><font color="#FF0000">其他班需要qq机器人课表或是网页版课表的也可以联系我，扫一个二维码就可以了</font></br>QQ:<font color="#add8e6">2773793160</font></br>邮箱:<font color="#add8e6">ayano05@outlook.com</font></br>steamid:<font color="#add8e6">420985217</font></p>',//内容
       footer: true,
       style: {
           minWidth: 400
@@ -158,6 +158,15 @@ $(function() {
    $("#class").rowspan(5);
    $("#class").rowspan(6);
    $("#class").rowspan(7);
+   $("#class").rowspan(8);
+   $("#class").rowspan(9);
+   $("#class").rowspan(10);
+   $("#class").rowspan(11);
+   $("#class").rowspan(12);
+   $("#class").rowspan(13);
+   $("#class").rowspan(14);
+
+
    
    });
    
