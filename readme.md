@@ -4,19 +4,17 @@
 
 ### 接口说明
 
-接口地址:
-https://t.ayano.top
+接口地址:</br>
+https://t.ayano.top</br></br>
 
-返回格式:
-type=1,2,3时是json
+返回格式:</br>
+type=1,2,3时是json;type=4时是html网页</br></br>
 
-type=4时是html网页
-
-请求方式:
-GET
-请求示例:
-https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8
-参数说明:
+请求方式:</br>
+GET</br></br>
+请求示例:</br>
+https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</br>
+参数说明:</br>
 
 |<font color=DeepSkyBlue>参数<font>|<font color=DeepSkyBlue>必填<font>|<font color=DeepSkyBlue>默认值<font>|<font color=DeepSkyBlue>type要求<font>|<font color=DeepSkyBlue>说明<font>|
 |--|--|--|--|--|
