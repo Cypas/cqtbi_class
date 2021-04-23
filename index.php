@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-04 13:26:18
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-13 23:43:15
+ * @LastEditTime: 2021-04-23 13:02:16
  */
 include_once 'get_return.php';//引用
 include_once 'get_class.php';//引用
@@ -19,7 +19,7 @@ include_once 'view.php';//引用
 !isset($_GET['day'])?$day=0:$day=$_GET['day'];
 !isset($_GET['date'])?$date=date("Y-m-d"):$date=$_GET['date'];
 
-;//url3要求的周次为小于10时要加0
+//url3要求的周次为小于10时要加0
 
 switch ($type) {
     case 1:

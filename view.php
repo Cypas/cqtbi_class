@@ -19,7 +19,6 @@ include_once 'function.php';//引用
               <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <link rel="stylesheet" href="assets/css/message.min.css">
               <link rel="stylesheet" href="assets/css/view.css">
-
               <script src="assets/js/message.min.js"></script>
 
               </head>
