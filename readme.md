@@ -5,13 +5,13 @@
 ### 接口说明
 
 接口地址:</br>
-https://t.ayano.top</br></br>
+https://t.ayano.top</br>
 
 返回格式:</br>
-type=1,2,3时是json;type=4时是html网页</br></br>
+type=1,2,3时是json;type=4时是html网页</br>
 
 请求方式:</br>
-GET</br></br>
+GET</br>
 请求示例:</br>
 https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</br>
 参数说明:</br>
