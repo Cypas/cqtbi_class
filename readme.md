@@ -6,9 +6,12 @@
 
 接口地址:
 https://t.ayano.top
+
 返回格式:
 type=1,2,3时是json
+
 type=4时是html网页
+
 请求方式:
 GET
 请求示例:
