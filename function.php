@@ -5,10 +5,10 @@
  * @version: 
  * @Date: 2021-04-05 19:50:47
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-16 00:21:02
+ * @LastEditTime: 2021-04-23 13:56:31
  */
 global $openid,$zc,$startdate;
-$startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改
+$startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改//////////////////////
 
 
     function del_object($arr,$week){////获取到的都是周课表，需要删除非当天的数据
@@ -64,7 +64,7 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
         return $week_num;
     }
 
-    function get_date_array($zc,$xq){//取当前周次 $date=null 表示参数可缺省
+    function get_date_array($zc,$xq){//取得某一周的星期几的月份和日期
         global $startdate;
         $starttime=date_format($startdate,"Y-m-d");
         $time=strtotime($starttime)+604800*($zc-1)+86400*($xq-1);

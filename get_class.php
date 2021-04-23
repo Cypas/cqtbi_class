@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-05 16:06:57
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-20 19:57:25
+ * @LastEditTime: 2021-04-23 14:02:01
  */
 include_once 'get_return.php';//引用
 include_once 'function.php';//引用
@@ -21,7 +21,11 @@ include_once 'class.php';//引用
         
         $data['class_num'] = count($data['classtime'],0);   //数组额外输出点数据让客户端省事  class_num是今天的课程节数
         $data['week_num']  = (int)$zc;  //周次
-        $data['date']      = getdate();       //当天的数据 年月日时分秒周 等等
+        $date=array();
+        for($i=1;$i<=7;++$i){
+            $date[$i]=get_date_array($zc,$i);
+        }
+        $data['date']      = $date;       //该周周一到周日的全部月份与日期
         
         $data = json_encode($data);   //数组内容变为json格式
         $data=Helper_Tool::unicodeDecode($data);
@@ -74,9 +78,6 @@ include_once 'class.php';//引用
         $data   = json_encode($data);         //数组内容变为json格式
         $data=Helper_Tool::unicodeDecode($data);
         echo $data;
-
-
-
      }
 
     function get_class_html($openid,$zc) {//获取网页页面（待完善，目前先输出学校的课表页面）
@@ -89,8 +90,6 @@ include_once 'class.php';//引用
         $data['week_num']  = (int)$zc;  //周次
         $data['date']      = getdate();  
         return $data;
-
-
         }
 
 ?>

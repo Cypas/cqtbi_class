@@ -1,21 +1,22 @@
+博客查看样式更佳→[我的博客](https://blog.ayano.top/archives/483/)
+
 ### openid的获取
 
 可参考这篇[文章](https://blog.ayano.top/archives/485/)
 
 ### 接口说明
 
-接口地址:
-https://t.ayano.top
+接口地址:</br>
+https://t.ayano.top</br>
 
-返回格式:
-type=1,2,3时是json
-type=4时是html网页
+返回格式:</br>
+type=1,2,3时是json;type=4时是html网页</br>
 
-请求方式:
-GET
-请求示例:
-https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8
-参数说明:
+请求方式:</br>
+GET</br>
+请求示例:</br>
+https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</br>
+参数说明:</br>
 
 |<font color=DeepSkyBlue>参数<font>|<font color=DeepSkyBlue>必填<font>|<font color=DeepSkyBlue>默认值<font>|<font color=DeepSkyBlue>type要求<font>|<font color=DeepSkyBlue>说明<font>|
 |--|--|--|--|--|
@@ -192,4 +193,38 @@ https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8
 |--|--|
 |classtime内的class_name|上课的班级|
 |class_num|本次输出内有多少节课，type=1时即一周共多少节大课，type=2时即当天多少节大课|
-|date|被查询日期的一系列时间参数（年月日时分秒周），但如果是周次查询时，输出的是该周周一数据|
+|date|被查询日期的一系列时间参数（年月日时分秒周），但如果是周次查询时，输出的是该周周一到周日的月份与日期数据|
+
+type=1(周次查询)时的date输出内容
+```json
+    "date":{
+        "1":{
+            "month":"4",
+            "day":"19"
+        },
+        "2":{
+            "month":"4",
+            "day":"20"
+        },
+        "3":{
+            "month":"4",
+            "day":"21"
+        },
+        "4":{
+            "month":"4",
+            "day":"22"
+        },
+        "5":{
+            "month":"4",
+            "day":"23"
+        },
+        "6":{
+            "month":"4",
+            "day":"24"
+        },
+        "7":{
+            "month":"4",
+            "day":"25"
+        }
+```
+
