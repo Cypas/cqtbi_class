@@ -2,11 +2,11 @@
 
 ### openid的获取
 
-可参考这篇[文章](https://blog.ayano.top/archives/485/)
+可参考这篇[文章](https://blog.ayano.top/archives/487/)
 
 ### 接口说明
 
-接口地址:</br>
+在线接口地址:</br>
 https://t.ayano.top</br>
 
 返回格式:</br>
