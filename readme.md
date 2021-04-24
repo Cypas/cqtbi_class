@@ -5,6 +5,7 @@
 可参考这篇[文章](https://blog.ayano.top/archives/487/)
 
 ### 接口说明
+> 接口数据源取自学校微信公众号内个人课表，数据与个人课表是实时同步的
 
 在线接口地址:</br>
 https://t.ayano.top</br>
