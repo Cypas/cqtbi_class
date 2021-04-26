@@ -5,7 +5,10 @@
 可参考这篇[文章](https://blog.ayano.top/archives/487/)
 
 ### 接口说明
+
 > 接口数据源取自学校微信公众号内个人课表，数据与个人课表是实时同步的
+
+<br/>
 
 在线接口地址:</br>
 https://t.ayano.top</br>
@@ -16,7 +19,7 @@ type=1,2,3时是json;type=4时是html网页</br>
 请求方式:</br>
 GET</br>
 请求示例:</br>
-https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</br>
+https://t.ayano.top/?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=9</br>
 参数说明:</br>
 
 |<font color=DeepSkyBlue>参数<font>|<font color=DeepSkyBlue>必填<font>|<font color=DeepSkyBlue>默认值<font>|<font color=DeepSkyBlue>type要求<font>|<font color=DeepSkyBlue>说明<font>|
@@ -27,7 +30,7 @@ https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</b
 |day|否|0|type=2时需要该参数|偏移天数，0表示当天，正数为今天之后多少天，如1代表明天，负数则相反|
 |date|否|当天|type=3时需要该参数|具体日期   格式为   2021-4-5|
 
-返回示例(type=1,2,3):
+返回示例(type=2,3)(type=1时除date部分外其他部分结构与之相同):
 
 ```json
 {
@@ -61,18 +64,6 @@ https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</b
         "20:30"
     ],
     "classtime":[
-        {
-            "course":"PHP程序设计",
-            "teacher":"施旭",
-            "class_name":"19软件2班",
-            "zc":"4-5,7-9,11-15,17-19",
-            "week":1,
-            "place":"行知楼4005",
-            "start_class":"6",
-            "end_class":"8",
-            "start_time":"14:00",
-            "end_time":"16:20"
-        },
         {
             "course":"Web编程基础",
             "teacher":"李麒骥",
@@ -108,82 +99,22 @@ https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</b
             "end_class":"8",
             "start_time":"14:00",
             "end_time":"16:20"
-        },
-        {
-            "course":"形势与政策4",
-            "teacher":"周媛",
-            "class_name":"19软件1、2合班",
-            "zc":"7-9,11",
-            "week":3,
-            "place":"C403",
-            "start_class":"4",
-            "end_class":"5",
-            "start_time":"10:30",
-            "end_time":"12:00"
-        },
-        {
-            "course":"Web应用开发-Asp.Net",
-            "teacher":"蔡茜",
-            "class_name":"19软件2",
-            "zc":"1-2,6,8-17",
-            "week":4,
-            "place":"A101",
-            "start_class":"1",
-            "end_class":"3",
-            "start_time":"8:00",
-            "end_time":"10:20"
-        },
-        {
-            "course":"信息系统综合开发实训(.NET)",
-            "teacher":"蔡茜",
-            "class_name":"19软件2",
-            "zc":"8-19",
-            "week":4,
-            "place":"A101",
-            "start_class":"6",
-            "end_class":"8",
-            "start_time":"14:00",
-            "end_time":"16:20"
-        },
-        {
-            "course":"软件工程",
-            "teacher":"叶超",
-            "class_name":"19软件2",
-            "zc":"3-6,8-18",
-            "week":5,
-            "place":"A217",
-            "start_class":"1",
-            "end_class":"3",
-            "start_time":"8:00",
-            "end_time":"10:20"
-        },
-        {
-            "course":"Web编程基础",
-            "teacher":"李麒骥",
-            "class_name":"19软件2",
-            "zc":"8",
-            "week":7,
-            "place":"C408",
-            "start_class":"6",
-            "end_class":"8",
-            "start_time":"14:00",
-            "end_time":"16:20"
         }
     ],
-    "class_num":9,
-    "week_num":8,
+    "class_num":3,
+    "week_num":9,
     "date":{
-        "seconds":10,
-        "minutes":40,
-        "hours":9,
-        "mday":20,
+        "seconds":0,
+        "minutes":0,
+        "hours":0,
+        "mday":27,
         "wday":2,
         "mon":4,
         "year":2021,
-        "yday":109,
+        "yday":116,
         "weekday":"Tuesday",
         "month":"April",
-        "0":1618882810
+        "0":1619452800
     }
 }
 ```
@@ -197,35 +128,45 @@ https://t.ayano.top/index.php?openid=o4Kckt8_djJfQqr1guobMwmlT9ME&type=4&zc=8</b
 |date|被查询日期的一系列时间参数（年月日时分秒周），但如果是周次查询时，输出的是该周周一到周日的月份与日期数据|
 
 type=1(周次查询)时的date输出内容
+
 ```json
-    "date":{
-        "1":{
-            "month":"4",
-            "day":"19"
-        },
-        "2":{
-            "month":"4",
-            "day":"20"
-        },
-        "3":{
-            "month":"4",
-            "day":"21"
-        },
-        "4":{
-            "month":"4",
-            "day":"22"
-        },
-        "5":{
-            "month":"4",
-            "day":"23"
-        },
-        "6":{
-            "month":"4",
-            "day":"24"
-        },
-        "7":{
-            "month":"4",
-            "day":"25"
-        }
+"date":{
+    "1":{
+        "month":"4",
+        "day":"26"
+    },
+    "2":{
+        "month":"4",
+        "day":"27"
+    },
+    "3":{
+        "month":"4",
+        "day":"28"
+    },
+    "4":{
+        "month":"4",
+        "day":"29"
+    },
+    "5":{
+        "month":"4",
+        "day":"30"
+    },
+    "6":{
+        "month":"5",
+        "day":"1"
+    },
+    "7":{
+        "month":"5",
+        "day":"2"
+    }
+}
 ```
 
+返回示例(type=4):(pc版与手机版页面样式会有一定不同，主要是考虑的手机版样式)
+![手机版样式](https://blog.ayano.top/usr/uploads/2021/04/1424179887.png)
+
+### 源码下载
+
+接口源码下载:
+https://github.com/ayano05/cqtbi_class
+有github账号的麻烦顺便点个star更好
