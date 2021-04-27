@@ -297,7 +297,7 @@ include_once 'function.php';//引用
                      case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '工业机器人';
                      case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '大数据4班';
                      case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '软件3班';
-                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
+                     case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '物联网1班';
                      //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
                      default:return'未记录班级';
