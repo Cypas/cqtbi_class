@@ -298,6 +298,8 @@ function openid_to_class($openid)
         case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '物联网1班';
         case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '会计2班';
         case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '物联网2班';
+        case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本二班';
+
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
         default:return '未记录班级';
     }
