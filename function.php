@@ -5,7 +5,7 @@
  * @version: 
  * @Date: 2021-04-05 19:50:47
  * @LastEditors: Mashiro_05
- * @LastEditTime: 2021-04-23 13:56:31
+ * @LastEditTime: 2021-05-25 16:52:08
  */
 global $openid,$zc,$startdate;
 $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改//////////////////////
@@ -160,7 +160,6 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
             case 11:$time=$start_time[11];break;
             case 12:$time=$start_time[12];break;
             default:$time="null";break;
-            
         }
         return $time;
     }    
@@ -181,8 +180,6 @@ $startdate=date_create("2021-3-1");/////////////////第一周开始时间，每�
             case 11:$time=$end_time[11];break;
             case 12:$time=$end_time[12];break;
             default:$time="null";break;
-
-
         }
         return $time;
     }

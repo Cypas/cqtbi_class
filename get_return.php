@@ -132,6 +132,3 @@ global $openid,$zc,$startdate;
 
 
 ?>
-
-
-

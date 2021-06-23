@@ -148,8 +148,7 @@ function msg_contact() {//创建消息框 联系方式
 }
 //合并table
 
-$(function() {
-   
+$(function() { 
    $("#class").rowspan(0);//传入的参数是对应的列数从0开始  第一列合并相同
    $("#class").rowspan(1);
    $("#class").rowspan(2);
@@ -165,9 +164,6 @@ $(function() {
    $("#class").rowspan(12);
    $("#class").rowspan(13);
    $("#class").rowspan(14);
-
-
-   
    });
    
 

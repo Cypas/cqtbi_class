@@ -1,13 +1,14 @@
 
 <?php
-include_once 'function.php';//引用
+include_once 'function.php'; //引用
 
-    function get_html($array){
-              $openid=$array['openid'];
-              $zc=$array['week_num'];
-              
-              $banji=openid_to_class($openid);
-              echo <<<eot
+function get_html($array)
+{
+    $openid = $array['openid'];
+    $zc = $array['week_num'];
+
+    $banji = openid_to_class($openid);
+    echo <<<eot
               <!doctype html>
               <html lang="zh">
               <head>
@@ -98,88 +99,85 @@ include_once 'function.php';//引用
 
               <tr height="20px">
               eot;
-              $month=get_date_array($zc,1)['month'];
+    $month = get_date_array($zc, 1)['month'];
 
-              echo <<<eot
+    echo <<<eot
               <th bgcolor="#d3eef4" colspan="1" width="9%">$month 月</th>
               eot;
 
-              for($i=1;$i<=7;++$i){
-                     $new_month=get_date_array($zc,$i)['month'];
-                     $day=get_date_array($zc,$i)['day'];
-                     if($month==$new_month){
-                            echo <<<eot
+    for ($i = 1; $i <= 7; ++$i) {
+        $new_month = get_date_array($zc, $i)['month'];
+        $day = get_date_array($zc, $i)['day'];
+        if ($month == $new_month) {
+            echo <<<eot
                             <th bgcolor="#f0f3f4" width="12.3%">$day</th>
                             <th bgcolor="#f0f3f4" width="0.3%"></th>
                             eot;
-                     }else{
-                            echo <<<eot
+        } else {
+            echo <<<eot
                             <th bgcolor="#f0f3f4" width="12.3%">$new_month.$day</th>
                             <th bgcolor="#f0f3f4" width="0.3%"></th>
                             eot;
-                     }
+        }
 
-              }
-              
-              echo "</tr>";
+    }
 
-              for($i=1;$i<=5;++$i){
-                     echo <<<eot
+    echo "</tr>";
+
+    for ($i = 1; $i <= 5; ++$i) {
+        echo <<<eot
                      <tr height="50px">
                      <th rowspan="1" bgcolor="#d3eef4">$i</th>
                      eot;
-                     echo fill($array,$i);
-                     echo "</tr>";
-              }
+        echo fill($array, $i);
+        echo "</tr>";
+    }
 
-              echo <<<eot
+    echo <<<eot
               <tr height="5px">
               <th colspan="1" bgcolor="#d3eef4"></th>
               eot;
-              
-              for($i=1;$i<=14;++$i){
-                     echo <<<eot
+
+    for ($i = 1; $i <= 14; ++$i) {
+        echo <<<eot
                      <td rowspan="1" bgcolor="#f0f3f4"></td>
                      eot;
-              }
-              
-              echo "</tr>";
+    }
 
-              for($i=6;$i<=10;++$i){
-                     echo <<<eot
+    echo "</tr>";
+
+    for ($i = 6; $i <= 10; ++$i) {
+        echo <<<eot
                      <tr height="50px">
                      <th rowspan="1" bgcolor="#d3eef4">$i</th>
                      eot;
-                     echo fill($array,$i);
-                     echo "</tr>";
-              }
+        echo fill($array, $i);
+        echo "</tr>";
+    }
 
-              echo <<<eot
+    echo <<<eot
               <tr height="5px">
               <th colspan="1" bgcolor="#d3eef4"></th>
               eot;
-              
-              for($i=1;$i<=14;++$i){
-                     echo <<<eot
+
+    for ($i = 1; $i <= 14; ++$i) {
+        echo <<<eot
                      <td rowspan="1" bgcolor="#f0f3f4"></td>
                      eot;
-              }
-              
-              echo '</tr>';
+    }
 
+    echo '</tr>';
 
-              for($i=11;$i<=12;++$i){
-                     echo <<<eot
+    for ($i = 11; $i <= 12; ++$i) {
+        echo <<<eot
                      <tr height="50px">
                      <th rowspan="1" bgcolor="#d3eef4">$i</th>
                      eot;
-                     echo fill($array,$i);
-                     echo "</tr>";
-              }
+        echo fill($array, $i);
+        echo "</tr>";
+    }
 
-
-              
-              echo <<<eod
+    echo <<<eod
               </table>
               </div>
               </section>
@@ -190,10 +188,10 @@ include_once 'function.php';//引用
               <p class="copy-footer-28 text-center">©2021 Mashiro_05 | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
               </div>
               </div>
-              
+
               </footer>
               </section>
-              
+
 
               <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <script src="assets/js/view.js"></script>
@@ -221,32 +219,31 @@ include_once 'function.php';//引用
               </html>
               eod;
 
+}
 
-              
-       }
+function fill($array, $c)
+{
+    $classtime = $array['classtime'];
 
-       function fill($array,$c){
-              $classtime=$array['classtime'];
-              
-              for($i=1;$i<=7;++$i){
-                     $color=rand_color();
-                     $msg="";
-                     for($ii=0;$ii<count($classtime);++$ii){
-                            $start_time=$classtime[$ii]['start_time'];
-                            $end_time=$classtime[$ii]['end_time'];
-                            $rowspan=$classtime[$ii]['end_class']-$classtime[$ii]['start_class']+1;
-                            $course=$classtime[$ii]['course'];
-                            $place=$classtime[$ii]['place'];
+    for ($i = 1; $i <= 7; ++$i) {
+        $color = rand_color();
+        $msg = "";
+        for ($ii = 0; $ii < count($classtime); ++$ii) {
+            $start_time = $classtime[$ii]['start_time'];
+            $end_time = $classtime[$ii]['end_time'];
+            $rowspan = $classtime[$ii]['end_class'] - $classtime[$ii]['start_class'] + 1;
+            $course = $classtime[$ii]['course'];
+            $place = $classtime[$ii]['place'];
 
-                            if(($classtime[$ii]['week']==$i)&&
-                                   (
-                                   ($classtime[$ii]['start_class']<$c && $classtime[$ii]['end_class']>$c)||
-                                   ($classtime[$ii]['start_class']==$c)||
-                                   ($classtime[$ii]['end_class']==$c)
-                                   )
-                            ){
-                                          //填充该节课 
-                                                 $msg=<<<eot
+            if (($classtime[$ii]['week'] == $i) &&
+                (
+                    ($classtime[$ii]['start_class'] < $c && $classtime[$ii]['end_class'] > $c) ||
+                    ($classtime[$ii]['start_class'] == $c) ||
+                    ($classtime[$ii]['end_class'] == $c)
+                )
+            ) {
+                //填充该节课
+                $msg = <<<eot
                                                  <td rowspan="1" align="center" bgcolor="$color" class="td">
                                                  $course</br>
                                                  @$place</br>
@@ -254,54 +251,56 @@ include_once 'function.php';//引用
                                                  </td>
                                                  <td rowspan="1" bgcolor="#f0f3f4"></td>
                                                  eot;
-                                          
-                                          break;
-                                   }
-                            }
-                            
-                     
-                            if($msg===""){
-                                   //填充空白行
 
-                                   $msg=<<<eot
+                break;
+            }
+        }
+
+        if ($msg === "") {
+            //填充空白行
+
+            $msg = <<<eot
                                    <td rowspan="1" bgcolor="#f0f3f4"></td>
                                    <td rowspan="1" bgcolor="#f0f3f4"></td>
                                    eot;
 
-                            }
-                            echo $msg;
-                     
-                     
-              }
-       }
-       function rand_color(){
-              $bgcolor=['#FFFFCC','#CCFFFF','#FFCCCC','#CCCCFF'];
-              
-              //$bgcolor=['#d1e8fa','#def8d2','#c9edfa','#ffffdd','#f7f790'];
-              return $bgcolor[rand(0, count($bgcolor)-1)];
-       }
+        }
+        echo $msg;
 
-       function get_url_parameter($name){//参数名称   //取url内参数值
-       parse_str($_SERVER['QUERY_STRING'],$array);
-       return($array['name']);
-       }
+    }
+}
+function rand_color()
+{
+    $bgcolor = ['#FFFFCC', '#CCFFFF', '#FFCCCC', '#CCCCFF'];
 
-       function openid_to_class($openid){//将已记录的openid与班级对应，直接显示班级名字
-              switch($openid){
-                     case 'o4Kckt8_djJfQqr1guobMwmlT9ME':return '软件2班';
-                     case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
-                     case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '计算机1班';
-                     case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '计算机6班';
-                     case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '移动应用1班';
-                     case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '软件4班';
-                     case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '工业机器人';
-                     case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '大数据4班';
-                     case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '软件3班';
-                     case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '物联网1班';
-                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
-                     //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
-                     default:return'未记录班级';
-              }
-              }
+    //$bgcolor=['#d1e8fa','#def8d2','#c9edfa','#ffffdd','#f7f790'];
+    return $bgcolor[rand(0, count($bgcolor) - 1)];
+}
+
+function get_url_parameter($name)
+{ //参数名称   //取url内参数值
+    parse_str($_SERVER['QUERY_STRING'], $array);
+    return ($array['name']);
+}
+
+function openid_to_class($openid)
+{ //将已记录的openid与班级对应，直接显示班级名字
+    switch ($openid) {
+        case 'o4Kckt8_djJfQqr1guobMwmlT9ME':return '软件2班';
+        case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
+        case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '计算机1班';
+        case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '计算机6班';
+        case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '移动应用1班';
+        case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '软件4班';
+        case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '工业机器人';
+        case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '大数据4班';
+        case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '软件3班';
+        case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '物联网1班';
+        case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '会计2班';
+        case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '物联网2班';
+        //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
+        default:return '未记录班级';
+    }
+}
 ?>
 
