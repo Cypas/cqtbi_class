@@ -286,19 +286,20 @@ function get_url_parameter($name)
 function openid_to_class($openid)
 { //将已记录的openid与班级对应，直接显示班级名字
     switch ($openid) {
-        case 'o4Kckt8_djJfQqr1guobMwmlT9ME':return '软件2班';
-        case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
-        case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '计算机1班';
-        case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '计算机6班';
-        case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '移动应用1班';
-        case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '软件4班';
-        case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '工业机器人';
-        case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '大数据4班';
-        case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '软件3班';
-        case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '物联网1班';
-        case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '会计2班';
-        case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '物联网2班';
+        case 'o4Kckt8_djJfQqr1guobMwmlT9ME':return '19软件2班';
+        case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
+        case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '20计算机1班';
+        case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '20计算机6班';
+        case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '19移动应用1班';
+        case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '19软件4班';
+        case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '19工业机器人';
+        case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '19大数据4班';
+        case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '19软件3班';
+        case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '19物联网1班';
+        case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '19会计2班';
+        case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '19物联网2班';
         case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本二班';
+        //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
 
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
         default:return '未记录班级';
