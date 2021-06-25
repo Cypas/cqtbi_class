@@ -17,10 +17,8 @@ function get_html($array)
               <title>工商课表</title>
 
               <link rel="stylesheet" href="assets/css/style-starter.css">
-              <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
               <link rel="stylesheet" href="assets/css/message.min.css">
               <link rel="stylesheet" href="assets/css/view.css">
-              <script src="assets/js/message.min.js"></script>
 
               </head>
 
@@ -193,7 +191,8 @@ function get_html($array)
               </section>
 
 
-              <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+              <script src="assets/js/jquery-3.6.0.min.js"></script>
+              <script src="assets/js/message.min.js"></script>
               <script src="assets/js/view.js"></script>
 
               <script>
