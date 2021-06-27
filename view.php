@@ -19,13 +19,14 @@ function get_html($array)
               <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fstyle-starter.css">
               <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fmessage.min.css">
               <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fview.css">
+              <link rel="icon" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffavicon.ico">
 
               <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fjquery-3.6.0.min.js"></script>
               <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fmessage.min.js"></script>
               <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fview.js"></script>
 
-              </head>
 
+              </head>
               <body class="cbp-spmenu-push">
               <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
                      <h3>当前班级:$banji</h3>

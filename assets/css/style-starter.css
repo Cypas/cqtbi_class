@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -640,8 +641,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  
-  
+
+
 }
 
 
@@ -4613,7 +4614,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  font-family:"Source Sans Pro","Hiragino Sans GB","Microsoft Yahei",SimSun,Helvetica,Arial,Sans-serif,monospace;
+  font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace;
 }
 
 .navbar-brand:hover,
@@ -10992,8 +10993,8 @@ a.text-dark:focus {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.eot?v=4.7.0");
+  src: url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Ffonts%2Ffontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -14365,7 +14366,7 @@ p.title-para {
 /*--/titles--*/
 /*-- main --*/
 .main-row {
-  background: url(../images/main.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fmain.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -14602,7 +14603,7 @@ button#showLeftPush {
   background: #38b6e0;
   border: none;
   font-size: 20px;
-  border-radius:6px;
+  border-radius: 6px;
 }
 
 .cbp-spmenu h3 {
@@ -14788,7 +14789,7 @@ button#showLeftPush {
 /*--/header--*/
 .tophny-header {
   /*background: var(--theme-hover);*/
-  background:#3daacd;
+  background: #3daacd;
   padding: 0px;
   transition: all 0.4s ease 0s;
   height: 50px;
@@ -14829,7 +14830,7 @@ button#showLeftPush {
 
 /* Switch buttons */
 /*--/search--*/
-.icon-right{
+.icon-right {
   text-align: right;
 }
 
@@ -15065,7 +15066,7 @@ a.hnysearch-icon span.fa {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner1.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -15075,17 +15076,17 @@ a.hnysearch-icon span.fa {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner3.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner4.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -15891,7 +15892,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Floading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -15922,7 +15923,7 @@ body:after {
 .lb-nav a.lb-prev {
   width: 5em;
   float: left;
-  background: url(../images/img-sprite.png) 40px 48% no-repeat;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fimg-sprite.png) 40px 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   transition: opacity 0.6s;
@@ -15937,7 +15938,7 @@ body:after {
   width: 5em;
   right: 0;
   float: right;
-  background: url(../images/img-sprite.png) -23px 48% no-repeat;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fimg-sprite.png) -23px 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   transition: opacity 0.6s;
@@ -15997,7 +15998,7 @@ body:after {
   width: 30px;
   height: 30px;
   margin-top: 1em;
-  background: url(../images/close.png) top right no-repeat;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fclose.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -16088,7 +16089,7 @@ body:after {
 }
 
 .w3l-newsletter .form-25-mian {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner3.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16353,7 +16354,7 @@ body:after {
 /* middle */
 .w3l-middle,
 .w3l-middle2 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner2.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16365,7 +16366,7 @@ body:after {
 }
 
 .w3l-middle2 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fbanner4.jpg) no-repeat center;
 }
 
 .w3l-middle:before,
@@ -17138,7 +17139,7 @@ body:after {
 }
 
 .w3l-contact-main .contant11-top-bg {
-  background: url(../images/contact.jpg) no-repeat center;
+  background: url(https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fimages%2Fcontact.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1;
