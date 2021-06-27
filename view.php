@@ -16,9 +16,13 @@ function get_html($array)
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
               <title>工商课表</title>
 
-              <link rel="stylesheet" href="assets/css/style-starter.css">
-              <link rel="stylesheet" href="assets/css/message.min.css">
-              <link rel="stylesheet" href="assets/css/view.css">
+              <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fstyle-starter.css">
+              <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fmessage.min.css">
+              <link rel="stylesheet" href="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fcss%2Fview.css">
+
+              <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fjquery-3.6.0.min.js"></script>
+              <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fmessage.min.js"></script>
+              <script src="https://cloud1.ayano.top/uploads%2F7%2F%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%2F%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE%2Fcqtbi_class%2Fassets%2Fjs%2Fview.js"></script>
 
               </head>
 
@@ -191,9 +195,7 @@ function get_html($array)
               </section>
 
 
-              <script src="assets/js/jquery-3.6.0.min.js"></script>
-              <script src="assets/js/message.min.js"></script>
-              <script src="assets/js/view.js"></script>
+
 
               <script>
               //展开左滑菜单
@@ -243,13 +245,13 @@ function fill($array, $c)
             ) {
                 //填充该节课
                 $msg = <<<eot
-                                                 <td rowspan="1" align="center" bgcolor="$color" class="td">
-                                                 $course</br>
-                                                 @$place</br>
-                                                 $start_time-$end_time</br>
-                                                 </td>
-                                                 <td rowspan="1" bgcolor="#f0f3f4"></td>
-                                                 eot;
+                        <td rowspan="1" align="center" bgcolor="$color" class="td">
+                        $course</br>
+                        @$place</br>
+                        $start_time-$end_time</br>
+                        </td>
+                        <td rowspan="1" bgcolor="#f0f3f4"></td>
+                        eot;
 
                 break;
             }
@@ -259,9 +261,9 @@ function fill($array, $c)
             //填充空白行
 
             $msg = <<<eot
-                                   <td rowspan="1" bgcolor="#f0f3f4"></td>
-                                   <td rowspan="1" bgcolor="#f0f3f4"></td>
-                                   eot;
+                    <td rowspan="1" bgcolor="#f0f3f4"></td>
+                    <td rowspan="1" bgcolor="#f0f3f4"></td>
+                    eot;
 
         }
         echo $msg;
