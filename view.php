@@ -188,7 +188,7 @@ function get_html($array)
               <footer class="footer-28">
               <div class="midd-footer-28 align-center py-lg-4 py-3 mt-3">
               <div class="container">
-              <p class="copy-footer-28 text-center">©2021 Mashiro_05 | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
+              <p class="copy-footer-28 text-center">©2021 Cypas_Nya | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/Cypas/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
               </div>
               </div>
 
