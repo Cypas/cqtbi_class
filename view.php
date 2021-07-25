@@ -303,7 +303,6 @@ function openid_to_class($openid)
         case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本二班';
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
 
-        //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '云计算1班';
         default:return '未记录班级';
     }
 }
