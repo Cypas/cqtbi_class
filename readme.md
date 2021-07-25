@@ -168,5 +168,5 @@ type=1(周次查询)时的date输出内容
 ### 源码下载
 
 接口源码下载:
-https://github.com/ayano05/cqtbi_class
+https://github.com/Cypas/cqtbi_class
 有github账号的麻烦顺便点个star更好
