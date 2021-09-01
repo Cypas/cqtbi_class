@@ -180,22 +180,20 @@ function get_html($array)
         echo "</tr>";
     }
 
-    echo <<<eod
+    $old_zc = $zc - 1;
+    $new_zc = $zc + 1;
+
+    echo <<<eot
               </table>
               </div>
               </section>
-              <section class="w3l-footer">
-              <footer class="footer-28">
-              <div class="midd-footer-28 align-center py-lg-4 py-3 mt-3">
-              <div class="container">
-              <p class="copy-footer-28 text-center">©2021 Cypas_Nya | <a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a> | <a href="https://github.com/Cypas/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
+              <section >
+              <div style="text-align:center;margin:15px auto">
+              <span><a class="btn btn-info" href="index.php?zc=$old_zc&openid=$openid" role="button">上一周</a></span>
+              <span style="padding:10px;">当前第$zc 周</span>
+              <span><a class="btn btn-info" href="index.php?zc=$new_zc&openid=$openid" role="button">下一周</a></span>
               </div>
-              </div>
-
-              </footer>
               </section>
-
-
 
 
               <script>
@@ -219,7 +217,7 @@ function get_html($array)
               </script>
               </body>
               </html>
-              eod;
+              eot;
 
 }
 
@@ -290,8 +288,10 @@ function openid_to_class($openid)
     switch ($openid) {
         case 'o4Kckt8_djJfQqr1guobMwmlT9ME':return '19软件2班';
         case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
-        case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '20计算机1班';
-        case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '20计算机6班';
+
+        case 'o4Kcktyf4erNHbZGbMRdkMBtjM10':return '20计应1班';
+        //case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '20计算机6班';
+
         case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '19移动应用1班';
         case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '19软件4班';
         case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '19工业机器人';
@@ -301,7 +301,7 @@ function openid_to_class($openid)
         case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '19会计2班';
         case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '19物联网2班';
         case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本二班';
-        //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
+        case 'o4KcktwGM5vhud_5ZJpsztFaTL1I':return '20前端1班';
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
 
         default:return '未记录班级';

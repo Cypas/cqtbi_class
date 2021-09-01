@@ -37,7 +37,8 @@ global $openid,$zc,$startdate;
         $ch = curl_init();
         $url="http://szxy.cqtbi.edu.cn/GwAppBak/MyApp/appSsoIn.aspx";
         $get_date = array(
-            'ord' => '24',            
+            'ord' => '21',            
+            //2021年某月，学校增加班级课表，班级课表似乎只有ord值由个人课表的24变为了21，其他不影响
             'PORTAL_TICKET' => $PORTAL_TICKET,
         );
         $url.="?".http_build_query($get_date);

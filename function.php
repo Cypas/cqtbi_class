@@ -8,7 +8,7 @@
  * @LastEditTime: 2021-05-25 16:52:08
  */
 global $openid,$zc,$startdate;
-$startdate=date_create("2021-3-1");/////////////////第一周开始时间，每学期都要改//////////////////////
+$startdate=date_create("2021-8-30");/////////////////第一周开始时间，每学期都要改//////////////////////
 
 
     function del_object($arr,$week){////获取到的都是周课表，需要删除非当天的数据
