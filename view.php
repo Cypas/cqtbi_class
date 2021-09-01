@@ -300,8 +300,11 @@ function openid_to_class($openid)
         case 'o4Kckt2BDRG-suhV2UzCrmuuRMLE':return '19物联网1班';
         case 'o4Kcktz-g4LvBgPOeaxdaTw--j6k':return '19会计2班';
         case 'o4Kckt9uoWCwOoN7lAqtDZnGmPyY':return '19物联网2班';
-        case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本二班';
+        case 'o4Kckt-WhMYxQKvmKU9SX-DDfWBU':return '19软件专本2班';
         case 'o4KcktwGM5vhud_5ZJpsztFaTL1I':return '20前端1班';
+        case 'o4Kckt56eLcQMfZmoZvQytsnfSVo':return '20东软6班';
+        case 'o4Kckt07Is1yJmQD03t6GAI7dUro':return '20云计算1班';
+        case 'o4Kckt4YDxbhQYzSV_rq5givC7oU':return '20云计算2班';
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
 
         default:return '未记录班级';
