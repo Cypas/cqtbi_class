@@ -305,6 +305,8 @@ function openid_to_class($openid)
         case 'o4Kckt56eLcQMfZmoZvQytsnfSVo':return '20东软6班';
         case 'o4Kckt07Is1yJmQD03t6GAI7dUro':return '20云计算1班';
         case 'o4Kckt4YDxbhQYzSV_rq5givC7oU':return '20云计算2班';
+        case 'o4Kckt1hrIdf5ajQhsNALLbF_awU':return '20web3班';
+        case 'o4Kckt3CW09fU_diVUm1k9EXbmvo':return '20计应2班';
         //case 'o4Kckt8REbfD7-b-NW4gIeOulfiU':return '19云计算1班';
 
         default:return '未记录班级';
