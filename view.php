@@ -293,7 +293,6 @@ function openid_to_class($openid)
         //case 'o4Kckt9KsbzPm8i5GYBIvzqYVhbI':return '20计算机6班';
 
         case 'o4Kckt2XNC1AvmC2HRo1Zphtxeoo':return '19移动应用1班';
-        case 'o4KcktzyHAQmCYwbPF2X1g9hDssw':return '19软件4班';
         case 'o4Kckt12TkdsMVPEvA4L-23vTvCk':return '19工业机器人';
         case 'o4Kckt3tUp2I9r_ynEvydJ11giuw':return '19大数据4班';
         case 'o4Kckt69QwyzboA6LjHq1Eo83mGs':return '19软件3班';
