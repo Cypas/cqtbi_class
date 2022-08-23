@@ -117,7 +117,7 @@ function msg_about_class() {//创建消息框 关于课表
       content: $('#panel').html(),
       offset: 'vt-center-center',
       title: '关于课表',
-      content: '<p>大一时我也就写过一个手动导入课程数据，本地连接mysql数据库进行查询，再连接机器人进行推送的课表，但麻烦的是每次改课都要跟着改数据库。</br>大二有了一定技术后着手抓包学工系统的课表，但发现学工系统任何页面的课表输出都是图片，而不是table表格，腾讯云ocr接口也要钱（这才是主要原因吧）</br></br>碰壁后计划解析微信课表，抓包过程中发现通过一个openid的值也就能取到最终的课表页面（事实是到现在为止也没找到除抓包外获取openid的方法），于是开始设计网页解析接口，很多函数全都不会，然后就是一边百度，一边码代码，更多时候也都是修bug....最终，耗费了我两周多的时间，终于算是完成了这个项目及其qq机器人推送，html表格页面。</br></br>事实上，这个页面的框架，消息框，各类css，js都是从别人模板下扣下来的，自己前端设计是真的菜orz，也就撑死搞搞后端算了。</br></br>本项目同时已开源，感兴趣的也可以去看看，有github账号的顺便点个star更好，地址为:<a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>',//内容
+      content: '<p>项目说明:代码于大二时期(2020年)完成，语法很烂，大佬勿喷，问就是懒得重构了(能跑就行)，有github账号的不妨动动小手点一个star，项目地址:<a href="https://github.com/Cypas/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>',
       footer: true,
       style: {
           minWidth: 400
@@ -135,7 +135,7 @@ function msg_contact() {//创建消息框 联系方式
       content: $('#pane2').html(),
       offset: 'vt-center-center',
       title: '联系方式',
-      content: '<p>个人简介:喜欢动漫的非二次元死宅，大二软件技术在读学生，steam骨灰级玩家(fps游戏除外)，擅长各种编程语言<s>的hello world！</s></br>希望能认识更多优秀的人</br><font color="#FF0000">其他班需要qq机器人课表或是网页版课表的也可以联系我，扫一个二维码就可以了</font></br>QQ:<font color="#add8e6">2773793160</font></br>邮箱:<font color="#add8e6">ayano05@outlook.com</font></br>steamid:<font color="#add8e6">420985217</font></p>',//内容
+      content: '<p>个人简介:2022届毕业生，steam，ns，vr玩家，其他班需要qq机器人课表或是网页版课表的也可以联系我</font></br>QQ:<font color="#add8e6">2773793160</font></br></p>',//内容
       footer: true,
       style: {
           minWidth: 400
