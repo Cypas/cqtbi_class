@@ -9,104 +9,107 @@
 <!doctype html>
 <html lang="zh">
 <head>
-	<meta name="说明" content="这里是本网页的基本模板，但实际上并没有跟上view.php的更新">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>这里是动态网页的静态模板，但实际上并没有跟上view.php的更新</title>
+    <meta name="说明" content="这里是本网页的基本模板，但实际上并没有跟上view.php的更新">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>这里是动态网页的静态模板，但实际上并没有跟上view.php的更新</title>
 
-	<link rel="stylesheet" href="assets/css/style-starter.css">
-	
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
 </head>
 
 <body class="cbp-spmenu-push">
-	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-		<h3>菜单</h3>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+    <h3>菜单</h3>
 
-		<ul>
-			<li><a class="active" href="index.php">本周课表</a></li><!--php添加参数openid-->
-			<li><a href="about.html">我的博客</a></li>
-			<li><a href="services.html">接口文档</a></li>
-			<li><a href="about.html">关于课表</a></li>
-			<li><a href="contact.html">联系方式</a></li>
-		</ul>
-	</nav>
-	<div class="main buttonset">
-		<!--导航栏-->
-		<div class="tophny-header">
-			<div class="container">
-				<div class="hny-topgds">
-					<div class="menu-notify">
-						<button id="showLeftPush"><span class="fa fa-bars" aria-hidden="true"></span></button>
+    <ul>
+        <li><a class="active" href="index.php">本周课表</a></li><!--php添加参数openid-->
+        <li><a href="about.html">我的博客</a></li>
+        <li><a href="services.html">接口文档</a></li>
+        <li><a href="about.html">关于课表</a></li>
+        <li><a href="contact.html">联系方式</a></li>
+    </ul>
+</nav>
+<div class="main buttonset">
+    <!--导航栏-->
+    <div class="tophny-header">
+        <div class="container">
+            <div class="hny-topgds">
+                <div class="menu-notify">
+                    <button id="showLeftPush"><span class="fa fa-bars" aria-hidden="true"></span></button>
 
-					</div>
-					<div class="logo text-center">
-						<h1><a class="navbar-brand" href="index.php"><!--php添加参数openid-->
-								工商课表
-							</a></h1>
+                </div>
+                <div class="logo text-center">
+                    <h1><a class="navbar-brand" href="index.php"><!--php添加参数openid-->
+                        工商课表
+                    </a></h1>
 
-					</div>
-					<div class="icon-left search-right text-right">
+                </div>
+                <div class="icon-left search-right text-right">
 
-						<a href="#search" class="hnysearch-icon" title="search"><span class="fa fa-search"
-								aria-hidden="true"></span></a>
-						<!-- 搜索改成了跳转其他页 -->
-						<div id="search" class="pop-overlay">
-							<div class="popup">
-								<h3 class="hny-title two">查询其他周次</h3>
-								<form action="index.php" method="get" class="search-box">
-									<input type="text" placeholder="输入要跳转的周次(1-20)" name="zc"
-										required="required" autofocus="" pattern="^(1?[0-9]|20)$">
-										<input type="hidden" name="openid" value="$openid"><!--用php动态生成这个input标签-->>
-									<button type="submit" class="btn">跳转</button>
-								</form>
+                    <a href="#search" class="hnysearch-icon" title="search"><span class="fa fa-search"
+                                                                                  aria-hidden="true"></span></a>
+                    <!-- 搜索改成了跳转其他页 -->
+                    <div id="search" class="pop-overlay">
+                        <div class="popup">
+                            <h3 class="hny-title two">查询其他周次</h3>
+                            <form action="index.php" method="get" class="search-box">
+                                <input type="text" placeholder="输入要跳转的周次(1-20)" name="zc"
+                                       required="required" autofocus="" pattern="^(1?[0-9]|20)$">
+                                <input type="hidden" name="openid" value="$openid"><!--用php动态生成这个input标签-->>
+                                <button type="submit" class="btn">跳转</button>
+                            </form>
 
-							</div>
-							<a class="close" href="#close">×</a>
-						</div>
-						
-					</div>
-				</div>
-			</div>
+                        </div>
+                        <a class="close" href="#close">×</a>
+                    </div>
 
-		</div>
-		<section class="w3l-testimonials"><!--主体内容-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="w3l-testimonials"><!--主体内容-->
 
 
-		</section>
-		<section class="w3l-footer">
-			<footer class="footer-28">
-					<div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
-						<div class="container">
-							<p class="copy-footer-28 text-center">©2021 Mashiro_05|<a href="https://blog.ayano.top" target="_blank" rel="noopener noreferrer">个人博客</a>|<a href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a></p>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</section>
+    </section>
+    <section class="w3l-footer">
+        <footer class="footer-28">
+            <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+                <div class="container">
+                    <p class="copy-footer-28 text-center">©2021 Mashiro_05|<a href="https://blog.ayano.top"
+                                                                              target="_blank" rel="noopener noreferrer">个人博客</a>|<a
+                            href="https://github.com/ayano05/cqtbi_class" target="_blank" rel="noopener noreferrer">github</a>
+                    </p>
+                </div>
+            </div>
+</div>
+</footer>
+</section>
 
-	</div>
+</div>
 
-	<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-	<script src="assets/js/view.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script src="assets/js/view.js"></script>
 
-	<script>
-		//展开左滑菜单
-		var menuLeft = document.getElementById('cbp-spmenu-s1'),
-			showLeftPush = document.getElementById('showLeftPush'),
-			body = document.body;
+<script>
+    //展开左滑菜单
+    var menuLeft = document.getElementById('cbp-spmenu-s1'),
+        showLeftPush = document.getElementById('showLeftPush'),
+        body = document.body;
 
-		showLeftPush.onclick = function () {
-			classie.toggle(this, 'active');
-			classie.toggle(body, 'cbp-spmenu-push-toright');
-			classie.toggle(menuLeft, 'cbp-spmenu-open');
-			disableOther('showLeftPush');
-		};
+    showLeftPush.onclick = function () {
+        classie.toggle(this, 'active');
+        classie.toggle(body, 'cbp-spmenu-push-toright');
+        classie.toggle(menuLeft, 'cbp-spmenu-open');
+        disableOther('showLeftPush');
+    };
 
-		function disableOther(button) {
-			if (button !== 'showLeftPush') {
-				classie.toggle(showLeftPush, 'disabled');
-			}
-		}
-	</script>
+    function disableOther(button) {
+        if (button !== 'showLeftPush') {
+            classie.toggle(showLeftPush, 'disabled');
+        }
+    }
+</script>
 </body>
 </html>
